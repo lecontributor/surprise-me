@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,arr1[100],arr2[100],count=0,count1=0;
+    // n=3;
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&arr1[i]);  
+    //    printf("%d\t",arr1[i]);   
+    }
+    for(j=0;j<3;j++)
+  {
+        scanf("%d",&arr2[j]);
+    //    printf("%d",arr2[j]);
+    }  
+   for(i=0;i<3;i++)
+    {
+        if(arr1[i]>arr2[i])
+        {
+        count++;
+    //    printf("%d",count);
+        }
+            else if(arr1[i]<arr2[i])
+            count1++;
+    } 
+   printf("%d %d",count,count1);
+}
+  
